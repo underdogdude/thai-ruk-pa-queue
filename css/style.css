@@ -125,7 +125,7 @@ footer {
 .table__body .table__row .table__status { 
     font-size: 20px;
 }
-.table__body .table__row .table__button{
+.table__body .table__row .table__button div{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,6 +134,7 @@ footer {
     margin-left: 3px;
     margin-right: 3px;
     flex: 1;
+    font-size: 16px;
 } 
 
 
