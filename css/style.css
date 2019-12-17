@@ -1,11 +1,36 @@
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/Circular.ttf");
+}
+
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "THSarabunNew";
+    src: url("../fonts/THSarabunNew.ttf");
+}
+
+@font-face {
+    font-family: "THSarabunNew";
+    src: url("../fonts/THSarabunNew\ Bold.ttf");
+    font-weight: bold;
+}
+
 body { 
+    font-family: 'THSarabunNew';
     margin: 0;
     padding: 0;
     overflow: auto;
     background: #fff4e0;
 }
 
-
+.title {
+    font-family: "Circular";
+}
 
 footer {
     background: url('../img/Footer.jpg');
@@ -17,6 +42,7 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    z-index: -1;
 }
 
 .footer-logo {
@@ -29,3 +55,85 @@ footer {
     max-width: 100%;
     width: 200px;
 }
+
+.tab__date { 
+    position: absolute;
+    right: 30px;
+}
+
+.nav-tabs { 
+    border-bottom: 0;
+    background: white;
+    padding-left: 8px;
+    padding-right: 30px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.07);
+    position: relative;
+}
+
+.nav-tabs .nav-item{ 
+    margin: 10px;
+    min-width: 100px;
+    font-size: 18px;
+    font-weight: normal;
+    border-radius: 0;
+    text-align: center;
+}
+.nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #a2a6ad;
+}
+.nav-tabs .nav-link.active {
+    background-image: linear-gradient(to left ,#00843e, #39a935);
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tab-content { 
+    min-height: 200px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.07);
+}
+
+
+
+.table__queue th { 
+    border-top: none;
+}
+
+.table__body { 
+    font-size: 18px;
+}
+
+.table__body .table__row .table__no { 
+    font-size: 22px;
+}
+.table__body .table__row .table__phone { 
+    font-size: 22px;
+    font-weight: bold;
+}
+.table__body .table__row .table__status { 
+    font-size: 20px;
+}
+.table__body .table__row .table__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.table__body .table__row .table__button button{
+    margin-left: 3px;
+    margin-right: 3px;
+    flex: 1;
+} 
+
+

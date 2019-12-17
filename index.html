@@ -31,16 +31,83 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="queue-tab" data-toggle="tab" href="#queue" role="tab"
-                        aria-controls="queue" aria-selected="true"> Queue </a>
+                        aria-controls="queue" aria-selected="true">
+                        คิวขณะนี้
+                        <span class="badge badge-pill badge-light">21</span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                        aria-controls="profile" aria-selected="false"> Added </a>
+                        aria-controls="profile" aria-selected="false">
+                        คิวที่มีผู้นำทางแล้ว
+                        <span class="badge badge-pill badge-light">10</span>
+                    </a>
                 </li>
+
+                <i class="tab__date">
+                    17 DECEMBER 2019
+                </i>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane fade show active" id="queue" role="tabpanel" aria-labelledby="queue-tab">
-                        
+                    <table class="table table-hover table__queue">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">เบอร์โทรศัพท์</th>
+                                <th scope="col">สถานะ</th>
+                                <th scope="col">วันที่/เวลา</th>
+                                <th scope="col">เวลารับคิว</th>
+                                <th scope="col">เวลาจ่ายคิว</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body">
+                            <tr class="table__row">
+                                <td scope="row" class="table__no">1.</td>
+                                <td class="table__phone">085-299-0414</td>
+                                <td class="table__status">
+                                    <span class="badge badge-danger">มาสาย</span>
+                                </td>
+                                <td class="table__date">
+                                    17/12/2562,10:10:21
+                                </td>
+                                <td class="table__queuein">
+                                    10:10:21
+                                </td>
+                                <td class="table__queueout">
+                                    10:10:21
+                                </td>
+                                <td class="table__button">
+                                    <button type="button" class="btn btn-outline-primary btn-sm">เลือกไกด์</button>
+                                    <button type="button" class="btn btn-outline-success btn-sm">เสร็จสิ้น</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">ยกเลิก</button>
+                                </td>
+                            </tr>
+                            <tr class="table__row">
+                                <td scope="row" class="table__no">2.</td>
+                                <td class="table__phone">085-299-0414</td>
+                                <td class="table__status">
+                                    <span class="badge badge-danger">มาสาย</span>
+                                </td>
+                                <td class="table__date">
+                                        17/12/2562,10:10:21
+                                </td>
+                                <td class="table__queuein">
+                                    10:10:21
+                                </td>
+                                <td class="table__queueout">
+                                    10:10:21
+                                </td>
+                                <td class="table__button">
+                                    <button type="button" class="btn btn-outline-primary btn-sm">เลือกไกด์</button>
+                                    <button type="button" class="btn btn-outline-success btn-sm">เสร็จสิ้น</button>
+                                    <button type="button" class="btn btn-outline-secondary btn-sm">ยกเลิก</button>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
 
 
