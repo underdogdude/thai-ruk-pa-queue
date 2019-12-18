@@ -152,6 +152,11 @@ footer {
 
     display: flex;
     align-items: center;
+    padding-left: 10px;
+}
+.guide__list li:hover { 
+    cursor: pointer;
+    background: #f4f4f4;
 }
 .guide__list li img{ 
     
