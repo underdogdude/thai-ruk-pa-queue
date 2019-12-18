@@ -27,7 +27,7 @@ var incomplete = {
         for(var i = 0 ; i < data.length ; i++) { 
             
             string += `
-                <tr class="table__row" id="${ data[i].id }">
+                <tr class="table__row" id="row-${ data[i].id }">
                     <td scope="row" class="table__no"> ${ i + 1 } </td>
                     <td class="table__phone"> (${ data[i].country_code }) - ${ data[i].mobile } </td>
                     <td class="table__status">
@@ -46,9 +46,14 @@ var incomplete = {
                     <td class="table__queueout">
                         xxxx
                     </td>
+                    <td class="table__guide">
+
+                        ${ generateGuide( data[i] ) }
+                        
+                    </td>
                     <td class="table__button">
                         <div>
-                            <button type="button" class="btn btn-outline-primary btn-sm">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#exampleModal" id="${ data[i].id }">
                                 เลือกไกด์
                                 <i class="far fa-hand-pointer"></i>
                             </button>
@@ -67,6 +72,11 @@ var incomplete = {
         }
 
         $(elem).html(string);
+
+        // Bind button id to function
+        $('button[data-toggle="modal"]').click(function(){
+            var id = $(this).attr('id');
+        });
     }
 }
 
@@ -88,6 +98,19 @@ function generateQueueStatus (string) {
     }else if(string.toLowerCase() === "late") { 
 
         return `<span class="badge badge-danger">${ capitalizeFirstLetter(string) }</span>`;
+    }
+}
+
+function generateGuide( data ){ 
+
+    if ( data.guide_id !== '-') { 
+
+        return `
+            <img src="${ data.guide_avatar_filename }" /> <br />
+            ${ data.guide_name }
+        `
+    }else { 
+        return 'ยังไม่ได้กำหนด';
     }
 }
 

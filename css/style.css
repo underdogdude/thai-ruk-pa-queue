@@ -137,4 +137,26 @@ footer {
     font-size: 16px;
 } 
 
+.table__guide { 
+    text-align: center;
+}
 
+.table__guide img { 
+
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.guide__list li label { 
+
+    display: flex;
+    align-items: center;
+}
+.guide__list li img{ 
+    
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}

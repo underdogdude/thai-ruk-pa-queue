@@ -37,8 +37,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                        aria-controls="profile" aria-selected="false">
+                    <a class="nav-link" id="complete-tab" data-toggle="tab" href="#complete" role="tab"
+                        aria-controls="complete" aria-selected="false">
                         คิวที่จบแล้ว
                         <span class="badge badge-pill badge-light">10</span>
                     </a>
@@ -60,17 +60,38 @@
                                 <th scope="col">เวลารับคิว</th>
                                 <th scope="col">เวลาจ่ายคิว</th>
                                 <th scope="col">ระยะเวลารอ (เวลาจ่าย - เวลารับ) </th>
+                                <th scope="col">ไกด์</th>
                                 <th scope="col"></th>
                             </tr>
                         </thead>
                         <tbody class="table__body" id="table_incomplete_row">
-                            
+
                         </tbody>
                     </table>
                 </div>
 
 
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                <div class="tab-pane fade" id="complete" role="tabpanel" aria-labelledby="complete-tab">
+
+                    <table class="table table-hover table__compete">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">เบอร์โทรศัพท์</th>
+                                <th scope="col">สถานะ</th>
+                                <th scope="col">วันที่/เวลา</th>
+                                <th scope="col">เวลารับคิว</th>
+                                <th scope="col">เวลาจ่ายคิว</th>
+                                <th scope="col">ระยะเวลารอ (เวลาจ่าย - เวลารับ) </th>
+                                <th scope="col">ไกด์</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table__body" id="table_complete_row">
+
+                        </tbody>
+                    </table>
+
+                </div>
             </div>
         </section>
     </div>
@@ -80,6 +101,58 @@
             <img src="img/footer-logo.png" />
         </div>
     </footer>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">กรุณาเลือกผู้นำทาง</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <ul class="list-group list-group-flush guide__list">
+                        <li class="list-group-item" >
+
+                            <label>
+                                <input class="form-check-input" type="radio" name="guideName" value="option1" >
+                                <img src="https://pbs.twimg.com/profile_images/2959799296/8adc8e7914393f0716a18e133e217dd9_400x400.jpeg" alt="" >
+
+                                <h3>Peter Griffin</h3>
+                            </label>
+                        </li>
+                        <li class="list-group-item" >
+
+                            <label>
+                                <input class="form-check-input" type="radio" name="guideName" value="option1" >
+                                <img src="https://pbs.twimg.com/profile_images/2959799296/8adc8e7914393f0716a18e133e217dd9_400x400.jpeg" alt="" >
+                                
+                                <h3>Peter Griffin</h3>
+                            </label>
+                        </li>
+                        <li class="list-group-item" >
+                            <label>
+                                <input class="form-check-input" type="radio" name="guideName" value="option1" >
+                                <img src="https://pbs.twimg.com/profile_images/2959799296/8adc8e7914393f0716a18e133e217dd9_400x400.jpeg" alt="" >
+
+                                <h3>Peter Griffin</h3>
+                            </label>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 
